@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using VkNet.Enums;
@@ -11,6 +11,12 @@ namespace VkNet.Model.RequestParams;
 [Serializable]
 public class AccountSaveProfileInfoParams
 {
+	/// <summary>
+	/// Идентификатор профиля
+	/// </summary>
+	[JsonProperty("Id")]
+	public int Id { get; set; }
+
 	/// <summary>
 	/// Имя пользователя. строка.
 	/// </summary>

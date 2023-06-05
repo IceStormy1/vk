@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -319,6 +319,7 @@ public partial class AccountCategory : IAccountCategory
 
 		return new()
 		{
+			Id = user.Id,
 			City = user.City,
 			Country = user.Country,
 			BirthDate = user.BirthDate,
